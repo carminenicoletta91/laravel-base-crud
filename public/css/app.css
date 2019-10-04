@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header,
+footer {
+  padding: 60px 0;
+  background-color: brown;
+  color: white;
+  text-align: center;
+}
+
+.container h1 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.container .Books {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 100px 0;
+}
+
+.container .Books .Book {
+  margin: 10px;
+  background-color: gray;
+  padding: 10px;
+  line-height: 2;
+  border: 2px solid brown;
+  border-radius: 5px;
+}
+
+.container .Books .Book p {
+  font-size: 20px;
+  color: brown;
+}
+
+.container .Books .Book p span {
+  color: white;
+}
+
