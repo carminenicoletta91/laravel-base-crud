@@ -12,3 +12,5 @@
 */
 
 Route::get('/','ControllerBooks@index')->name('book.index');
+Route::get('/create','ControllerBooks@create')->name('book.create');
+Route::post('/','ControllerBooks@store')->name('book.store');

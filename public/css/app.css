@@ -8,30 +8,63 @@ header,
 footer {
   padding: 60px 0;
   background-color: brown;
-  color: white;
   text-align: center;
+}
+
+header p,
+footer p {
+  font-size: 40px;
+  color: white;
+}
+
+.container {
+  padding: 50px 0;
+}
+
+.container .link {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.container .link a {
+  padding: 15px;
+  background-color: rgba(165, 42, 42, 0.9);
+  color: white;
+  border: solid 1px black;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.container .link a:hover {
+  background: brown;
+  border: solid 3px black;
 }
 
 .container h1 {
   text-align: center;
   font-size: 40px;
   font-weight: 900;
+  padding-bottom: 20px;
 }
 
 .container .Books {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 100px 0;
+  margin: 50px 0;
 }
 
 .container .Books .Book {
   margin: 10px;
-  background-color: gray;
+  background-color: lightslategray;
   padding: 10px;
   line-height: 2;
-  border: 2px solid brown;
-  border-radius: 5px;
+  border: 3px solid brown;
+  border-radius: 10px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .container .Books .Book p {
@@ -40,6 +73,41 @@ footer {
 }
 
 .container .Books .Book p span {
+  color: white;
+}
+
+.container .form-books {
+  margin: 60px auto;
+  width: 300px;
+}
+
+.container .form-books form {
+  line-height: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  padding: 30px;
+  background: lightslategray;
+  border: solid 2px black;
+  border-radius: 12px;
+}
+
+.container .form-books form .form-element input {
+  padding: 4px 4px;
+  margin: 0 0 0 5px;
+}
+
+.container .form-books form .form-element label {
+  font-size: 16px;
+}
+
+.container .form-books form #save-button {
+  margin-top: 30px;
+  align-self: center;
+  border-style: groove 1px brown;
+  border-radius: 7px;
+  padding: 10px;
+  background-color: brown;
   color: white;
 }
 

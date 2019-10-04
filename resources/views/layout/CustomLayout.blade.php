@@ -16,9 +16,16 @@
       <header>
         <p>Header</p>
       </header>
+      <div class="container">
+        @yield('title')
+        <div class="link">
+          @yield('link-option')
+        </div>
+        <div class="{{$type}}s">
+          @yield('content')
+        </div>
+      </div>
 
-        @yield('content')
-      
       <footer>
         <p>Footer</p>
       </footer>

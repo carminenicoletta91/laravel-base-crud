@@ -26,7 +26,8 @@ class ControllerBooks extends Controller
      */
     public function create()
     {
-        //
+      $type ="form-book";
+      return view('page.bookCreate',compact('type'));
     }
 
     /**
@@ -37,7 +38,16 @@ class ControllerBooks extends Controller
      */
     public function store(Request $request)
     {
-        //
+      $validatedData = $request ->validate([
+        "title" => "required",
+        "description" =>"required",
+        "author" =>"required"
+
+      ]);
+
+      $values = Book::create($validatedData);
+
+      return redirect('/');
     }
 
     /**

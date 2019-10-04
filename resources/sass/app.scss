@@ -6,36 +6,92 @@
 }
 header,footer{
   padding:60px 0;
-
   background-color:brown;
-  color:white;
   text-align: center;
+  p{
+    font-size:40px;
+    color:white;
+  }
 
 }
 .container{
+  padding:50px 0;
+  .link{
+    text-align: center;
+    margin:30px 0;
+    a{
+      padding:15px;
+      background-color:rgba(165,42,42,0.9);
+      color:white;
+      border:solid 1px black;
+      border-radius:10px;
+      text-decoration: none;
+      &:hover{
+        background:rgba(165,42,42,1);
+        border:solid 3px black;
+      }
+    }
+  }
   h1{
     text-align: center;
     font-size:40px;
     font-weight:900;
+    padding-bottom:20px;
   }
   .Books{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin:100px 0;
+    margin:50px 0;
     .Book{
       margin:10px;
-      background-color:gray;
+      background-color:lightslategray;
       padding:10px;
       line-height:2;
-      border:2px solid brown;
-      border-radius:5px;
+      border:3px solid brown;
+      border-radius:10px;
+      width:300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       p{
         font-size:20px;
         color:brown;
         span{
           color:white;
         }
+      }
+    }
+  }
+  .form-books{
+    margin:60px auto;
+    width:300px;
+    form{
+      line-height:2;
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      padding:30px;
+      background:lightslategray;
+      border:solid 2px black;
+      border-radius:12px;
+      .form-element{
+        input{
+          padding:4px 4px;
+          margin:0 0 0 5px;
+        }
+        label{
+          font-size:16px;
+        }
+      }
+      #save-button{
+        margin-top:30px;
+        align-self: center;
+        border-style:groove 1px brown;
+        border-radius:7px;
+        padding:10px;
+        background-color:brown;
+        color:white;
       }
     }
   }
