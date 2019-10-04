@@ -69,7 +69,10 @@ class ControllerBooks extends Controller
      */
     public function edit($id)
     {
-        //
+        $type = "form-book";
+        $values = Book::findorFail($id);
+        return view('page.bookEdit',compact('values','type'));
+
     }
 
     /**
@@ -81,7 +84,15 @@ class ControllerBooks extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $validatedData = $request -> validate([
+          "title" => "required",
+          "description" =>"required",
+          "author" => "required"
+        ]);
+
+        Book::whereId($id) ->update($validatedData);
+
+        return redirect('/');
     }
 
     /**

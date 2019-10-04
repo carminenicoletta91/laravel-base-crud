@@ -61,6 +61,11 @@ header,footer{
           color:white;
         }
       }
+      #Update-link{
+        text-align: center;
+        text-decoration: none;
+        color:blue;
+      }
     }
   }
   .form-books{
@@ -84,7 +89,7 @@ header,footer{
           font-size:16px;
         }
       }
-      #save-button{
+      #save-button,#update-button{
         margin-top:30px;
         align-self: center;
         border-style:groove 1px brown;

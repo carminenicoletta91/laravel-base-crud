@@ -17,6 +17,8 @@
       <p>Title: <span>{{$value -> title}}</span></p>
       <p>Description: <span>{{$value -> description}}</span></p>
       <p>Author: <span>{{$value -> author}}</span></p>
+
+      <a id="Update-link"href={{route('book.edit',$value -> id)}}>UPDATE</a>
     </div>
   @endforeach
 
