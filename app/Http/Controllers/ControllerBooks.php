@@ -103,6 +103,8 @@ class ControllerBooks extends Controller
      */
     public function destroy($id)
     {
-        //
+        $values =Book::findorFail($id);
+        $values ->delete();
+        return redirect('/');
     }
 }

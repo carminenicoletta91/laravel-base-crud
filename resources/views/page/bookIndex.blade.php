@@ -19,6 +19,7 @@
       <p>Author: <span>{{$value -> author}}</span></p>
 
       <a id="Update-link"href={{route('book.edit',$value -> id)}}>UPDATE</a>
+      <a id="Delete-link"href={{route('book.destroy',$value -> id)}}>DELETE</a>
     </div>
   @endforeach
 
